@@ -1,0 +1,12 @@
+# 入力したコマンドの検索先
+echo $PATH
+
+# 環境変数を見る
+printenv
+
+# 「/path/to/directory」にパスを通す（特定のディレクトリをパスに加える事を「パスをとおす」）
+# ログアウトすると無効になる
+export PATH=/path/to/directory:$PATH
+
+# 特定のコマンドの呼び出先検索
+which cmd
